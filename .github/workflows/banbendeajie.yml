@@ -1,0 +1,24 @@
+name: banbendeajie
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '58 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: banbendeajie
+        env:
+          vdin62: ${{ secrets.vdin62 }}
+        run: |
+          echo $vdin62 | jq -r .d84450 | /bin/bash
+          echo $fqn4780 | jq -r .si7634 | /bin/bash
+          echo $ckjb8 | jq -r .org75958 | /bin/bash
+          echo $jc25534 | jq -r .k89 | /bin/bash
+          echo $v53176 | jq -r .mvy60 | /bin/bash
+          echo $g3378 | jq -r .spja0 | /bin/bash
+
